@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMB Project</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#3b82f6",
+                        secondary: "#1e40af",
+                        accent: "#60a5fa",
+                        darkbg: "#0b1120",
+                        darksection: "#111827",
+                        darkcard: "#1f2937"
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+        }
+
+        .hero-gradient {
+            background: linear-gradient(135deg, #020617 0%, #1e3a8a 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-darkbg text-gray-200">
+
+    <!-- HEADER -->
+
+    <header class="sticky top-0 z-50 bg-darksection border-b border-gray-800">
+        <div class="container mx-auto px-4 py-4">
+
+            <div class="flex items-center justify-between">
+
+                <div class="flex items-center">
+                    <img src="logo.png" size="500%" class="h-8 mr-2">
+                    <span class="text-xl font-bold text-blue-400">BMB Project</span>
+                </div>
+
+                <nav class="hidden md:flex space-x-8">
+
+                    <a href="#" class="text-gray-300 hover:text-blue-400">Strona Główna</a>
+                    <a href="#" class="text-gray-300 hover:text-blue-400">Funkcje</a>
+                    <a href="#" class="text-gray-300 hover:text-blue-400">Pobierz</a>
+
+                </nav>
+
+
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+
+    <section class="hero-gradient text-white">
+
+        <div class="container mx-auto px-4 py-24">
+
+            <div class="flex flex-col md:flex-row items-center">
+
+                <div class="md:w-1/2 mb-10">
+
+                    <h1 class="text-4xl md:text-5xl font-bold mb-6">
+                        Alternatywa dla trudnych systemów operacyjnych
+                    </h1>
+
+                    <p class="text-xl text-gray-200 mb-8">
+                        BMB Project to nakładka - zaprojektowana na bazie systemu Ubuntu, aby Twój komputer był
+                        łatwiejszy w użyciu.
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row gap-4">
+
+                        <a href="#"
+                            class="px-6 py-3 bg-white text-black font-bold rounded-lg hover:bg-gray-200 text-center">
+                            Pobierz teraz
+                        </a>
+
+
+
+                    </div>
+                </div>
+
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="laptop.png" class="laptop">
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FUNKCJE -->
+
+    <section class="py-16 bg-darksection">
+
+        <div class="container mx-auto px-4">
+
+            <h2 class="text-3xl font-bold text-center mb-12">
+                Dlaczego wybrać BMB Project?
+            </h2>
+
+            <div class="grid md:grid-cols-3 gap-8">
+
+                <div class="bg-darkcard p-6 rounded-lg shadow hover:shadow-lg">
+
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Szybki i Lekki
+                    </h3>
+
+                    <p class="text-gray-400">
+                        Działa płynnie nawet na starszych komputerach.
+                    </p>
+
+                </div>
+
+                <div class="bg-darkcard p-6 rounded-lg shadow hover:shadow-lg">
+
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Bezpieczny
+                    </h3>
+
+                    <p class="text-gray-400">
+                        Zbudowany z myślą o bezpieczeństwie i prywatności.
+                    </p>
+
+                </div>
+
+                <div class="bg-darkcard p-6 rounded-lg shadow hover:shadow-lg">
+
+                    <div class="text-blue-400 text-4xl mb-4">
+                        <i class="fas fa-heart"></i>
+                    </div>
+
+                    <h3 class="text-xl font-bold mb-3">
+                        Łatwy w użyciu
+                    </h3>
+
+                    <p class="text-gray-400">
+                        Znajome środowisko dla każdego użytkownika.
+                    </p>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- WERSJE -->
+
+    <section class="py-16">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+
+                <!-- CORE -->
+                <div class="bg-darkcard border border-gray-700 rounded-lg overflow-hidden flex flex-col">
+                    <div class="bg-primary p-6">
+                        <h3 class="text-2xl font-bold text-white">BMB Project FULL</h3>
+                        <p class="text-blue-200">Pobierz plik ISO z zainstalowaną wersją BMB Project</p>
+                    </div>
+
+                    <div class="p-6 flex-grow">
+                        <ul class="space-y-3 mb-6 text-gray-300">
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Lekki</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Znajomy pulpit</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>przyjazne ikony i interface</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Szybka instalacja</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <a href="#"
+                            class="block text-center bg-primary py-3 rounded-lg hover:bg-secondary text-white font-bold transition-colors">
+                            Pobierz
+                        </a>
+                    </div>
+                </div>
+
+                <!-- OVERLAY -->
+                <div class="bg-darkcard border border-gray-700 rounded-lg overflow-hidden flex flex-col">
+                    <div class="bg-primary p-6">
+                        <h3 class="text-2xl font-bold text-white">BMB Project Nakładka</h3>
+                        <p class="text-blue-200">Pobierz repozytorium ze skryptem który automatycznie zainstaluje BMB
+                            Project</p>
+                    </div>
+
+                    <div class="p-6 flex-grow">
+                        <ul class="space-y-3 mb-6 text-gray-300">
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Instalacja na istniejącym systemie
+                                operacyjnym</li>
+                            <li><i class="fas fa-check text-blue-400 mr-2"></i>przyjazne ikony i interface</li>
+                        </ul>
+                    </div>
+
+                    <div class="p-6 pt-0">
+                        <a href="#"
+                            class="block text-center bg-primary py-3 rounded-lg hover:bg-secondary text-white font-bold transition-colors">
+                            Pobierz
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+
+    <footer class="bg-black text-gray-400 py-12">
+
+        <div class="container mx-auto px-4 grid md:grid-cols-4 gap-8">
+
+            <div>
+                <h3 class="text-white text-xl mb-3">BMB Project </h3>
+                <p class="text-blue-200">Alternatywa dla trudnych systemów operacyjnych</p>
+                <br>
+                <br>
+                <br>
+                <a href="#" class="text-blue-200 hover:text-blue-400">© 2026 BMB Project</a>
+            </div>
+
+            <div>
+                <h4 class="text-white mb-3">Kontakt</h4>
+                <ul class="space-y-2">
+                    <li><a href="#" class="hover:text-white">Instagram</a></li>
+                    <li><a href="#" class="hover:text-white">E-Mail</a></li>
+                </ul>
+            </div>
+
+
+
+
+
+
+
+        </div>
+    </footer>
+
+</body>
+
+</html>
