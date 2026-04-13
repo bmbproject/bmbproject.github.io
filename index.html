@@ -53,18 +53,15 @@
             <div class="flex items-center justify-between">
 
                 <div class="flex items-center">
-                    <img src="logo.png" size="500%" class="h-8 mr-2">
+                    <img src="logo.png" class="h-8 mr-2">
                     <span class="text-xl font-bold text-blue-400">BMB Project</span>
                 </div>
 
                 <nav class="hidden md:flex space-x-8">
-
                     <a href="#" class="text-gray-300 hover:text-blue-400">Strona Główna</a>
                     <a href="#" class="text-gray-300 hover:text-blue-400">Funkcje</a>
                     <a href="#" class="text-gray-300 hover:text-blue-400">Pobierz</a>
-
                 </nav>
-
 
             </div>
         </div>
@@ -90,14 +87,10 @@
                     </p>
 
                     <div class="flex flex-col sm:flex-row gap-4">
-
                         <a href="#"
                             class="px-6 py-3 bg-white text-black font-bold rounded-lg hover:bg-gray-200 text-center">
                             Pobierz teraz
                         </a>
-
-
-
                     </div>
                 </div>
 
@@ -122,51 +115,27 @@
             <div class="grid md:grid-cols-3 gap-8">
 
                 <div class="bg-darkcard p-6 rounded-lg shadow hover:shadow-lg">
-
                     <div class="text-blue-400 text-4xl mb-4">
                         <i class="fas fa-bolt"></i>
                     </div>
-
-                    <h3 class="text-xl font-bold mb-3">
-                        Szybki i Lekki
-                    </h3>
-
-                    <p class="text-gray-400">
-                        Działa płynnie nawet na starszych komputerach.
-                    </p>
-
+                    <h3 class="text-xl font-bold mb-3">Szybki i Lekki</h3>
+                    <p class="text-gray-400">Działa płynnie nawet na starszych komputerach.</p>
                 </div>
 
                 <div class="bg-darkcard p-6 rounded-lg shadow hover:shadow-lg">
-
                     <div class="text-blue-400 text-4xl mb-4">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-
-                    <h3 class="text-xl font-bold mb-3">
-                        Bezpieczny
-                    </h3>
-
-                    <p class="text-gray-400">
-                        Zbudowany z myślą o bezpieczeństwie i prywatności.
-                    </p>
-
+                    <h3 class="text-xl font-bold mb-3">Bezpieczny</h3>
+                    <p class="text-gray-400">Zbudowany z myślą o bezpieczeństwie i prywatności.</p>
                 </div>
 
                 <div class="bg-darkcard p-6 rounded-lg shadow hover:shadow-lg">
-
                     <div class="text-blue-400 text-4xl mb-4">
                         <i class="fas fa-heart"></i>
                     </div>
-
-                    <h3 class="text-xl font-bold mb-3">
-                        Łatwy w użyciu
-                    </h3>
-
-                    <p class="text-gray-400">
-                        Znajome środowisko dla każdego użytkownika.
-                    </p>
-
+                    <h3 class="text-xl font-bold mb-3">Łatwy w użyciu</h3>
+                    <p class="text-gray-400">Znajome środowisko dla każdego użytkownika.</p>
                 </div>
 
             </div>
@@ -179,51 +148,53 @@
         <div class="container mx-auto px-4">
             <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
 
-                <!-- CORE -->
-                <div class="bg-darkcard border border-gray-700 rounded-lg overflow-hidden flex flex-col">
-                    <div class="bg-primary p-6">
-                        <h3 class="text-2xl font-bold text-white">BMB Project FULL</h3>
-                        <p class="text-blue-200">Pobierz plik ISO z zainstalowaną wersją BMB Project</p>
+                <!-- FULL -->
+                <div class="bg-darkcard border border-gray-700 rounded-lg overflow-hidden flex flex-col opacity-50 pointer-events-none relative">
+                    <div class="absolute top-4 right-4 z-10">
+                        <span class="bg-yellow-500 text-yellow-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Wkrótce</span>
+                    </div>
+                    <div class="bg-gray-700 p-6">
+                        <h3 class="text-2xl font-bold text-gray-300">BMB Project FULL</h3>
+                        <p class="text-gray-400">Pobierz plik ISO z zainstalowaną wersją BMB Project</p>
                     </div>
 
                     <div class="p-6 flex-grow">
-                        <ul class="space-y-3 mb-6 text-gray-300">
-                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Lekki</li>
-                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Znajomy pulpit</li>
-                            <li><i class="fas fa-check text-blue-400 mr-2"></i>przyjazne ikony i interface</li>
-                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Szybka instalacja</li>
+                        <ul class="space-y-3 mb-6 text-gray-500">
+                            <li><i class="fas fa-check text-gray-500 mr-2"></i>Lekki</li>
+                            <li><i class="fas fa-check text-gray-500 mr-2"></i>Znajomy pulpit</li>
+                            <li><i class="fas fa-check text-gray-500 mr-2"></i>Przyjazne ikony i interface</li>
+                            <li><i class="fas fa-check text-gray-500 mr-2"></i>Szybka instalacja</li>
                         </ul>
                     </div>
 
                     <div class="p-6 pt-0">
-                        <a href="#"
-                            class="block text-center bg-primary py-3 rounded-lg hover:bg-secondary text-white font-bold transition-colors">
-                            Pobierz
-                        </a>
+                        <span class="block text-center bg-gray-600 py-3 rounded-lg text-gray-400 font-bold cursor-not-allowed">
+                            Wkrótce dostępne
+                        </span>
                     </div>
                 </div>
 
-                <!-- OVERLAY -->
-                <div class="bg-darkcard border border-gray-700 rounded-lg overflow-hidden flex flex-col">
-                    <div class="bg-primary p-6">
-                        <h3 class="text-2xl font-bold text-white">BMB Project Nakładka</h3>
-                        <p class="text-blue-200">Pobierz repozytorium ze skryptem który automatycznie zainstaluje BMB
-                            Project</p>
+                <!-- NAKŁADKA -->
+                <div class="bg-darkcard border border-gray-700 rounded-lg overflow-hidden flex flex-col opacity-50 pointer-events-none relative">
+                    <div class="absolute top-4 right-4 z-10">
+                        <span class="bg-yellow-500 text-yellow-900 text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wide">Wkrótce</span>
+                    </div>
+                    <div class="bg-gray-700 p-6">
+                        <h3 class="text-2xl font-bold text-gray-300">BMB Project Nakładka</h3>
+                        <p class="text-gray-400">Pobierz repozytorium ze skryptem który automatycznie zainstaluje BMB Project</p>
                     </div>
 
                     <div class="p-6 flex-grow">
-                        <ul class="space-y-3 mb-6 text-gray-300">
-                            <li><i class="fas fa-check text-blue-400 mr-2"></i>Instalacja na istniejącym systemie
-                                operacyjnym</li>
-                            <li><i class="fas fa-check text-blue-400 mr-2"></i>przyjazne ikony i interface</li>
+                        <ul class="space-y-3 mb-6 text-gray-500">
+                            <li><i class="fas fa-check text-gray-500 mr-2"></i>Instalacja na istniejącym systemie operacyjnym</li>
+                            <li><i class="fas fa-check text-gray-500 mr-2"></i>Przyjazne ikony i interface</li>
                         </ul>
                     </div>
 
                     <div class="p-6 pt-0">
-                        <a href="#"
-                            class="block text-center bg-primary py-3 rounded-lg hover:bg-secondary text-white font-bold transition-colors">
-                            Pobierz
-                        </a>
+                        <span class="block text-center bg-gray-600 py-3 rounded-lg text-gray-400 font-bold cursor-not-allowed">
+                            Wkrótce dostępne
+                        </span>
                     </div>
                 </div>
 
@@ -238,7 +209,7 @@
         <div class="container mx-auto px-4 grid md:grid-cols-4 gap-8">
 
             <div>
-                <h3 class="text-white text-xl mb-3">BMB Project </h3>
+                <h3 class="text-white text-xl mb-3">BMB Project</h3>
                 <p class="text-blue-200">Alternatywa dla trudnych systemów operacyjnych</p>
                 <br>
                 <br>
@@ -253,12 +224,6 @@
                     <li><a href="#" class="hover:text-white">E-Mail</a></li>
                 </ul>
             </div>
-
-
-
-
-
-
 
         </div>
     </footer>
